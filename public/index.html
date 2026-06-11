@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Yeimy Morales</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Yeimy Morales</h1>
+    <p>Analista Programadora | Administración de Bodegas</p>
+    <nav>
+      <a href="#inicio" data-page="inicio">Inicio</a>
+      <a href="#sobre-mi" data-page="sobre-mi">Sobre mí</a>
+      <a href="#habilidades" data-page="habilidades">Habilidades</a>
+      <a href="#proyectos" data-page="proyectos">Proyectos</a>
+      <a href="#contacto" data-page="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="page active">
+      <h2>¡Bienvenida a mi portafolio!</h2>
+      <p>Soy estudiante de Analista Programadora en Instituto Profesional Santo Tomás y trabajo en administración de bodegas e inventario en DARTEL S.A.</p>
+      <p>Este portafolio muestra mis proyectos y habilidades en desarrollo web.</p>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="page">
+      <h2>Sobre mí</h2>
+      <p>Me llamo Yeimy Morales, soy de Santiago, Chile. Combino mi experiencia en logística y control de stock con SAP S/4HANA con mi formación en desarrollo de software.</p>
+      <p>Me apasiona construir soluciones que conecten el mundo operativo con la tecnología.</p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="page">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML & CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Node.js & Express</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">C# & ASP.NET MVC</div>
+        <div class="skill-card">SAP WM/MM</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">SQL Server</div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="page">
+      <h2>Proyectos</h2>
+
+      <div class="project-card">
+        <h3>🎫 TechHelpWeb</h3>
+        <p>Sistema de tickets de soporte técnico desarrollado con ASP.NET MVC, Web API 2, SQL Server y Bootstrap.</p>
+        <p><strong>Tecnologías:</strong> C#, ASP.NET MVC, SQL Server, Razor, jQuery</p>
+      </div>
+
+      <div class="project-card">
+        <h3>📱 VitalApp</h3>
+        <p>Aplicación móvil de bienestar para trabajadores TI en Santiago, orientada a combatir el sedentarismo.</p>
+        <p><strong>Tecnologías:</strong> Diseño UX/UI, investigación de usuarios, estadísticas de salud OMS</p>
+      </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="page">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna consulta? Escríbeme y te respondo a la brevedad.</p>
+
+      <form id="contactForm">
+        <label>Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+        <label>Correo</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+        <label>Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <div id="alerta" class="alerta"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Yeimy Morales — Santiago, Chile</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
